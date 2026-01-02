@@ -1,0 +1,25 @@
+email-risk-simulator/
+│
+├── app/
+│   ├── main.py              # FastAPI entry
+│   ├── config.py
+│   ├── database.py
+│   │
+│   ├── models/
+│   │   ├── domain.py
+│   │   ├── ip.py
+│   │   ├── simulation.py
+│   │
+│   ├── risk_engine/
+│   │   ├── rules.py         # ALL RULES HERE
+│   │   ├── evaluator.py    # APPLY RULES
+│   │   └── scorer.py       # FINAL SCORE
+│   │
+│   ├── services/
+│   │   ├── domain_check.py
+│   │   ├── content_check.py
+│   │
+│   └── api/
+│       └── simulate.py
+│
+└── requirements.txt
